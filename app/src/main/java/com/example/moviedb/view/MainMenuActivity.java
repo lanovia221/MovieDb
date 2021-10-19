@@ -15,6 +15,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainMenuActivity extends AppCompatActivity {
 
+    //warna biru artinya file ada yang dirubah
+    //warna hijau file baru dan belum di upload
+    //warna merah bisa jadi ada conflict di file atau tidak terpantau:)
+
     BottomNavigationView bottomNavigationView;
     NavHostFragment navHostFragment;
     Toolbar toolbar;
