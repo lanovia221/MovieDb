@@ -18,6 +18,7 @@ public class MainMenuActivity extends AppCompatActivity {
     //warna biru artinya file ada yang dirubah
     //warna hijau file baru dan belum di upload
     //warna merah bisa jadi ada conflict di file atau tidak terpantau:)
+    //file ->new->version control copas link git dan tambahin .git (clone)
 
     BottomNavigationView bottomNavigationView;
     NavHostFragment navHostFragment;
