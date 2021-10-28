@@ -16,13 +16,16 @@
         <entry key="..\:/UC/Semester 3/Mobile Application Development/MovieDB/app/src/main/res/layout/card_now_playing.xml" value="0.33" />
         <entry key="..\:/UC/Semester 3/Mobile Application Development/MovieLibrary/app/src/main/res/layout/activity_main.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.2046875" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/activity_main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/activity_main_menu.xml" value="0.22" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/activity_movie_details.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/card_now_playing.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/fragment_movie_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/card_now_playing.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/card_upcoming.xml" value="0.178125" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/fragment_movie_details.xml" value="0.33" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/fragment_now_playing.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/fragment_up_coming.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/MovieDatabaseBaru/app/src/main/res/layout/lala.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

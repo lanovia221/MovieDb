@@ -7,7 +7,7 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_card_nowplaying"
+        android:id="@+id/cv_card_upcoming"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -22,12 +22,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cons_cv_card_nowplaying"
+            android:id="@+id/cons_cv_card_upcoming"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/img_poster_card_nowplaying"
+                android:id="@+id/img_poster_card_upcoming"
                 android:layout_width="88dp"
                 android:layout_height="104dp"
                 android:layout_marginStart="16dp"
@@ -39,7 +39,7 @@
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <TextView
-                android:id="@+id/lbl_title_card_nowplaying"
+                android:id="@+id/lbl_title_card_upcoming"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -48,20 +48,20 @@
                 android:text="@string/title"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/img_poster_card_nowplaying"
+                app:layout_constraintStart_toEndOf="@+id/img_poster_card_upcoming"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/lbl_overview_nowplaying"
+                android:id="@+id/lbl_overview_upcoming"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
                 android:text="@string/subtitle"
                 android:textColor="@color/Gold"
-                app:layout_constraintEnd_toEndOf="@+id/lbl_title_card_nowplaying"
-                app:layout_constraintStart_toStartOf="@+id/lbl_title_card_nowplaying"
-                app:layout_constraintTop_toBottomOf="@+id/lbl_title_card_nowplaying" />
+                app:layout_constraintEnd_toEndOf="@+id/lbl_title_card_upcoming"
+                app:layout_constraintStart_toStartOf="@+id/lbl_title_card_upcoming"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_title_card_upcoming" />
 
             <TextView
                 android:id="@+id/lbl_releasedate_card_upcoming"
@@ -69,9 +69,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/subtitle"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/img_poster_card_nowplaying"
-                app:layout_constraintEnd_toEndOf="@+id/lbl_overview_nowplaying"
-                app:layout_constraintStart_toStartOf="@+id/lbl_overview_nowplaying" />
+                app:layout_constraintBottom_toBottomOf="@+id/img_poster_card_upcoming"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_overview_upcoming"
+                app:layout_constraintStart_toStartOf="@+id/lbl_overview_upcoming" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,5 +29,9 @@
         android:id="@+id/upComingFragment"
         android:name="com.example.moviedb.view.fragments.upComingFragment"
         android:label="@string/up_coming"
-        tools:layout="@layout/fragment_up_coming" />
+        tools:layout="@layout/fragment_up_coming" >
+        <action
+            android:id="@+id/action_upComingFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
 </navigation>

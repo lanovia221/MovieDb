@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,15 +15,12 @@ import android.view.ViewGroup;
 
 import com.example.moviedb.R;
 import com.example.moviedb.adapter.NowPlayingAdapter;
+import com.example.moviedb.helper.ItemClickSupport;
 import com.example.moviedb.model.NowPlaying;
 import com.example.moviedb.view.activities.NowPlayingActivity;
 import com.example.moviedb.viewmodel.MovieViewModel;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link NowPlayingFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class NowPlayingFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -38,14 +36,7 @@ public class NowPlayingFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment NowPlayingFragment.
-     */
+
     // TODO: Rename and change types and number of parameters
     public static NowPlayingFragment newInstance(String param1, String param2) {
         NowPlayingFragment fragment = new NowPlayingFragment();
@@ -82,6 +73,7 @@ public class NowPlayingFragment extends Fragment {
         return view;
     }
 
+
     private Observer<NowPlaying> showNowPlaying = new Observer<NowPlaying>() {
         @Override
         public void onChanged(NowPlaying nowPlaying) {
@@ -89,6 +81,27 @@ public class NowPlayingFragment extends Fragment {
             NowPlayingAdapter adapter = new NowPlayingAdapter(getActivity());
             adapter.setListNowPlaying(nowPlaying.getResults());
             rv_now_playing.setAdapter(adapter);
+
+//            ItemClickSupport.addTo(rv_now_playing).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+//                @Override
+//                public boolean onItemClicked(RecyclerView recyclerView, int position, View v) {
+//
+//                    return false;
+//                }
+//            });
+
+            ItemClickSupport.addTo(rv_now_playing).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+                @Override
+                public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                    Bundle bundle = new Bundle();
+                    bundle.putString("movieId", ""+nowPlaying.getResults().get(position).getId());
+                    Navigation.findNavController(v).navigate(R.id.action_nowPlayingFragment_to_movieDetailsFragment, bundle);
+
+                }
+            });
         }
+
+
+
     };
 }
