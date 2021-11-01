@@ -31,6 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
+                    android:maxLines="2"
                     android:text="@string/subtitle"
                     android:textAlignment="center"
                     android:textColor="@color/black"
